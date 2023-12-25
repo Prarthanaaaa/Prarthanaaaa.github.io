@@ -1,70 +1,137 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background_img\(1\).jpg');
-    background-size: cover;
-    background-position: contain;
-    background-repeat: no-repeat;
-    color: #333;
+    box-sizing: border-box;
   }
   
   header {
-    background-color: #0a0c0a;
-    color: white;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 1em;
   }
   
   main {
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
-  }
-  
-  section {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
   }
   
   form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    margin: auto;
+    gap: 10px;
   }
   
   label {
-    margin-bottom: 8px;
+    font-weight: bold;
   }
   
-  input {
+  input,
+  select {
+    width: 100%;
     padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    box-sizing: border-box;
   }
   
   button {
-    background-color: #050605;
-    color: white;
     padding: 10px;
-    border: none;
-    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #0b0f0b;
-  }
-  
   footer {
-    background-color: #050805;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+  }
+
+  
+
+  /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background_img\(1\).jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    border-radius: 10px; /* Add rounded corners */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+/* Example of a simple fade-in animation */
+main {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+  button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
